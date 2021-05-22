@@ -70,7 +70,7 @@ var userFavoriteLower = userFavorite.toLowerCase();
 
 // Now we check the myBands array to see if it contains the user's answer.
 // If the user's band is not in the array...
-if (myBands.indexOf(userFavoriteLower) === -1) {
+if (myBands.indexOf(userFavoriteLower) === 1) {
     alert("Not my favotite");
 
  }else {
@@ -91,7 +91,7 @@ function Song (title, artist){
         this.artist = artist;
 }
     Song.prototype.play = function () {
-        console.log( this.title + " Playing");
+        console.log( this.title + " Playing by " + this.artist);
     };
 
     var song = new Song("The Bottom of It", "Fruit Bats");
